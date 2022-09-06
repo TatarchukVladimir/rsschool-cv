@@ -33,6 +33,15 @@ I have organizational skills.
 
 ### Code Example
 
+**Description:**Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
+```
+function createPhoneNumber(numbers){
+  let numbersStr = numbers.join('');
+
+  return `(${numbersStr.slice(0,3)}) ${numbersStr.slice(3, 6)}-${numbersStr.slice(6)}`;
+}
+```
+
 ---
 
 ### Education
