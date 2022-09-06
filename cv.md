@@ -54,12 +54,12 @@ function createPhoneNumber(numbers){
     - [CSS](https://ru.code-basics.com/languages/css)
     - [JavaScript](https://ru.code-basics.com/languages/javascript)
 
-    ---
+---
 
-    ### Languages
+### Languages
 
-    + Russian
-    + English (in progress)
++ Russian
++ English (in progress)
 
-    ---
+---
 
