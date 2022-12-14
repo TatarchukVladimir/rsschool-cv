@@ -81,7 +81,13 @@ html {
 
 .main__wrapper {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 33% 67%;
+    grid-template-rows: auto;
+}
+
+.code {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
 }
 
 .content {
@@ -116,6 +122,7 @@ html {
 }
 
 .education__link {
+    color: #e9e514;
     font-weight: 500;
     font-size: 0.8em;
     padding-left: 3%;
@@ -144,9 +151,27 @@ html {
 
 .contacts__item {
     list-style-type: none;
-    color: #e9e514;
-    font-size: 2em;
-    font-weight: 300;
     padding-left: 5%;
     padding-top: 5px;
+}
+
+.contacts__link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #e9e514;
+    font-size: 1.6em;
+}
+
+.contacts__icon {
+    width: 20px;
+    padding-right: 5%;
+}
+
+.contacts {
+    padding-bottom: 30px;
+}
+
+.rssLogo {
+    background-color: #e9e514;
+    height: 120px;
 }
