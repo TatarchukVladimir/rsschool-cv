@@ -6,33 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>Tatarchuk Vladimir</title>
+    <title>Tatarchuk Vladimir CV</title>
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
             <div class="header__container">
-                <img class="header__photo" src="photo.png" alt="my photo">
+                <img class="header__photo" src="images,icons/photo.png" alt="my photo">
                 <div class="header__content">
                     <nav class="header__nav">
                         <ul class="header__list">
                             <li class="header__nav__item">
-                                
+                                <a href="#aboutMe" class="header__link">About Me</a>
                             </li>
                             <li class="header__nav__item">
-                                <a href="" class="header__link">Education</a>
+                                <a href="#education" class="header__link">Education</a>
                             </li>
                             <li class="header__nav__item">
-                                <a href="" class="header__link">Skills</a>
+                                <a href="#skills" class="header__link">Skills</a>
                             </li>
                             <li class="header__nav__item">
-                                <a href="" class="header__link">Code Example</a>
+                                <a href="#code" class="header__link">Code Example</a>
                             </li>
                             <li class="header__nav__item">
-                                <a href="" class="header__link">Contacts</a>
-                            </li>
-                            <li class="header__nav__item">
-                                <a href="" class="header__link">Languages</a>
+                                <a href="#contacts" class="header__link">Contacts</a>
                             </li>
                         </ul>
                     </nav>
@@ -45,9 +42,40 @@
         </div>
     </header>
     <main class="main">
+        <div class="wrapper main__wrapper">
+            <section class="education content" id="education">
+                <h2 class="education__header">education</h2>
+                <ul class="education__list">Belarusian National Technical University
+                    <li class="education__list__name">Faculty of Civil Engineering, Industrial and Civil construction</li>
+                </ul>
+                <ul class="education__list">Code basic
+                    <li class="education__list__name"><a class="education__link">HTML</a></li>
+                    <li class="education__list__name"><a class="education__link">CSS</a></li>
+                    <li class="education__list__name"><a class="education__link">JavaScript</a></li>
+                </ul>
 
+            </section>
+            <section class="about content" id="aboutMe">
+                <h2 class="education__header">about me</h2>
+            </section>
+            <section class="skills content" id="skills">
+                <h2 class="education__header">skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/htmlIcon.png" alt="html.png"><span class="skills__name">HTML</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/cssIcon.png" alt="css.png"><span class="skills__name">CSS</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/sassIcon.png" alt="sass.png"><span class="skills__name">SASS</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/figmaIcon.png" alt="figma.png"><span class="skills__name">Figma</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/githubIcon.png" alt="github.png"><span class="skills__name">Github</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/jsIcon.png" alt="js.png"><span class="skills__name">JavaScript</span></li>
+                </ul>
+            </section>
+            <section class="code content" id="code">
+                <h2 class="education__header">code example</h2>
+            </section>
+        </div>
     </main>
     <footer class="footer">
+        <section class="contacts" id="contacts"></section>
         
     </footer>
 </body>
