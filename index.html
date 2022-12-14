@@ -49,9 +49,9 @@
                     <li class="education__list__name">Faculty of Civil Engineering, Industrial and Civil construction</li>
                 </ul>
                 <ul class="education__list">Code basic
-                    <li class="education__list__name"><a class="education__link">HTML</a></li>
-                    <li class="education__list__name"><a class="education__link">CSS</a></li>
-                    <li class="education__list__name"><a class="education__link">JavaScript</a></li>
+                    <li class="education__list__name"><img class="education__icon" src="images,icons/htmlIcon.png" alt="html.img"><a class="education__link">HTML</a></li>
+                    <li class="education__list__name"><img class="education__icon" src="images,icons/cssIcon.png" alt="css.img"><a class="education__link">CSS</a></li>
+                    <li class="education__list__name"><img class="education__icon" src="images,icons/jsIcon.png" alt="js.img"><a class="education__link">JavaScript</a></li>
                 </ul>
 
             </section>
@@ -61,22 +61,70 @@
             <section class="skills content" id="skills">
                 <h2 class="education__header">skills</h2>
                 <ul class="skills__list">
-                    <li class="skills__item"><img class="skills__icon" src="images,icons/htmlIcon.png" alt="html.png"><span class="skills__name">HTML</span></li>
-                    <li class="skills__item"><img class="skills__icon" src="images,icons/cssIcon.png" alt="css.png"><span class="skills__name">CSS</span></li>
-                    <li class="skills__item"><img class="skills__icon" src="images,icons/sassIcon.png" alt="sass.png"><span class="skills__name">SASS</span></li>
-                    <li class="skills__item"><img class="skills__icon" src="images,icons/figmaIcon.png" alt="figma.png"><span class="skills__name">Figma</span></li>
-                    <li class="skills__item"><img class="skills__icon" src="images,icons/githubIcon.png" alt="github.png"><span class="skills__name">Github</span></li>
-                    <li class="skills__item"><img class="skills__icon" src="images,icons/jsIcon.png" alt="js.png"><span class="skills__name">JavaScript</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/htmlIcon.png" alt="html.img"><span class="skills__name">HTML</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/cssIcon.png" alt="css.img"><span class="skills__name">CSS</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/sassIcon.png" alt="sass.img"><span class="skills__name">SASS</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/figmaIcon.png" alt="figma.img"><span class="skills__name">Figma</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/githubIcon.png" alt="github.img"><span class="skills__name">Github</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/jsIcon.png" alt="js.img"><span class="skills__name">JavaScript</span></li>
                 </ul>
             </section>
             <section class="code content" id="code">
                 <h2 class="education__header">code example</h2>
+                <code>
+                    function formatDuration (seconds) {
+                        if (seconds === 0) return 'now';
+                        const obj = {};
+                      
+                        obj.year = Math.floor(seconds / 365 / 24 / 60 / 60);
+                        obj.day = Math.floor((seconds / 60 / 60 / 24) % 365);
+                        obj.hour = Math.floor((seconds / 60 / 60) % 24);
+                        obj.minute = Math.floor((seconds / 60) % 60);
+                        obj.second = seconds % 60;
+                      
+                        let keys = Object.keys(obj);
+                      
+                        for ( let i = 0; i < keys.length; i++ ) {
+                          if ((obj[keys[i]]) === 1) {
+                            obj[keys[i]] = `${obj[keys[i]]} ${keys[i]},`;
+                          } else if ((obj[keys[i]]) === 0) { 
+                              delete obj[keys[i]];
+                            } else {
+                            obj[keys[i]] = `${obj[keys[i]]} ${keys[i]}s,`
+                          }
+                        }
+                        
+                        keys = Object.keys(obj);
+                      
+                        for ( let i = 0; i < keys.length; i++ ) {
+                          if (i === (keys.length - 2) ) {
+                          obj[keys[i]] = `${obj[keys[i]].slice(0, -1)} and`;
+                          }
+                        }
+                         
+                        let strMassive = Object.values(obj);
+                        let str = strMassive.join(' ');
+                        str = str.slice(0, -1);
+                      
+                        return str;
+                        
+                      }
+                      
+                </code>
+            </section>
+            <section class="contacts content" id="contacts">
+                <h2 class="education__header">contacts</h2>
+                <ul class="contacts__list">
+                    <li class="contacts__item">Location: Minsk, Belarus</li>
+                    <li class="contacts__item">Phone: +375 44 562 96 49</li>
+                    <li class="contacts__item">Email: tatarchuk.vladimir16@gmail.com</li>
+                    <li class="contacts__item">GitHub:<a href="https://github.com/TatarchukVladimir" class="contacts__link">TatachukVladimir</a></li>
+                </ul>
             </section>
         </div>
     </main>
     <footer class="footer">
-        <section class="contacts" id="contacts"></section>
-        
+        <section class="rssLogo"></section>
     </footer>
 </body>
 </html>

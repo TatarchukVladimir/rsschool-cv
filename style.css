@@ -45,6 +45,7 @@ html {
 }
 
 .header__link {
+    color: #000000;
     font-size: 2.5em;
     text-decoration: none;
     font-weight: 500;
@@ -84,13 +85,7 @@ html {
 }
 
 .content {
-    padding: 0 3%;
-}
-
-.education__list {
-    color: #f7f7f6;
-    font-size: 2.5em;
-    font-weight: 500;
+    padding: 0 5%;
 }
 
 .education__header {
@@ -99,6 +94,32 @@ html {
     font-weight: 600;
     text-transform: uppercase;
     border-bottom: 2px solid #e9e514;
+}
+
+.education__list {
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: 500;
+    list-style-type: none;
+}
+
+.education__list__name {
+    color: #e9e514;
+    font-size: 0.8em;
+    font-weight: 300;
+    padding-left: 5%;
+    padding-top: 5px;
+}
+
+.education__icon {
+    width: 20px;
+}
+
+.education__link {
+    font-weight: 500;
+    font-size: 0.8em;
+    padding-left: 3%;
+    cursor: pointer;
 }
 
 .skills__item {
@@ -117,13 +138,14 @@ html {
     padding-left: 3%;
 }
 
-.education__list {
-    list-style-type: none;
+.code__code {
+    color: #e9e514;
 }
 
-.education__list__name {
+.contacts__item {
+    list-style-type: none;
     color: #e9e514;
-    font-size: 0.8em;
+    font-size: 2em;
     font-weight: 300;
     padding-left: 5%;
     padding-top: 5px;
