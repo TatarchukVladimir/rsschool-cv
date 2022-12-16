@@ -49,14 +49,33 @@
                     <li class="education__list__name">Faculty of Civil Engineering, Industrial and Civil construction</li>
                 </ul>
                 <ul class="education__list">Code basic
-                    <li class="education__list__name"><img class="education__icon" src="images,icons/htmlIcon.png" alt="html.img"><a href="https://ru.code-basics.com/languages/html" class="education__link" target="_blank">HTML</a></li>
-                    <li class="education__list__name"><img class="education__icon" src="images,icons/cssIcon.png" alt="css.img"><a href="https://ru.code-basics.com/languages/css" class="education__link" target="_blank">CSS</a></li>
-                    <li class="education__list__name"><img class="education__icon" src="images,icons/jsIcon.png" alt="js.img"><a href="https://ru.code-basics.com/languages/javascript" class="education__link" target="_blank">JavaScript</a></li>
+                    <li class="education__list__name">
+                        <a href="https://ru.code-basics.com/languages/html" class="education__link" target="_blank">
+                            <img class="education__icon" src="images,icons/htmlIcon.png" alt="html.img">
+                            HTML
+                        </a>
+                    </li>
+                    <li class="education__list__name">
+                        <a href="https://ru.code-basics.com/languages/css" class="education__link" target="_blank">
+                            <img class="education__icon" src="images,icons/cssIcon.png" alt="css.img">
+                            CSS
+                        </a>
+                    </li>
+                    <li class="education__list__name">
+                        <a href="https://ru.code-basics.com/languages/javascript" class="education__link" target="_blank">
+                            <img class="education__icon" src="images,icons/jsIcon.png" alt="js.img">
+                            JavaScript
+                        </a>
+                    </li>
                 </ul>
-
             </section>
             <section class="about content" id="aboutMe">
                 <h2 class="education__header">about me</h2>
+                <p class="about__content">Hello, I am 30 years old. I am very goal oriented. I have a great desire to learn new things and work.</p>
+                <ul class="about__list">Languages
+                    <li class="about__item">Russian - native languages</li>
+                    <li class="about__item">English  - A1-A2</li>
+                </ul>
             </section>
             <section class="skills content" id="skills">
                 <h2 class="education__header">skills</h2>
@@ -71,51 +90,75 @@
             </section>
             <section class="code content" id="code">
                 <h2 class="education__header">code example</h2>
-                <code class="code__code">
-                    function formatDuration (seconds) {<Br>
-                        if (seconds === 0) return 'now';<Br>
-                        const obj = {};<Br>
-                        obj.year = Math.floor(seconds / 365 / 24 / 60 / 60);<Br>
-                        obj.day = Math.floor((seconds / 60 / 60 / 24) % 365);<Br>
-                        obj.hour = Math.floor((seconds / 60 / 60) % 24);<Br>
-                        obj.minute = Math.floor((seconds / 60) % 60);<Br>
-                        obj.second = seconds % 60;<Br>
-                        let keys = Object.keys(obj);<Br>
-                        for ( let i = 0; i < keys.length; i++ ) {<Br>
-                          if ((obj[keys[i]]) === 1) {<Br>
-                            obj[keys[i]] = `${obj[keys[i]]} ${keys[i]},`;<Br>
-                          } else if ((obj[keys[i]]) === 0) {<Br>
-                              delete obj[keys[i]];<Br>
-                            } else {<Br>
-                            obj[keys[i]] = `${obj[keys[i]]} ${keys[i]}s,`<Br>
-                          }<Br>
-                        }<Br>
-                        keys = Object.keys(obj);<Br>
-                        for ( let i = 0; i < keys.length; i++ ) {<Br>
-                          if (i === (keys.length - 2) ) {<Br>
-                          obj[keys[i]] = `${obj[keys[i]].slice(0, -1)} and`;<Br>
-                          }<Br>
-                        }<Br>
-                        let strMassive = Object.values(obj);<Br>
-                        let str = strMassive.join(' ');<Br>
-                        str = str.slice(0, -1);<Br>
-                        return str;<Br>
-                      }
-                </code>
+                <p class="code__description">Codewars task:
+                    <a href="https://www.codewars.com/kata/58235a167a8cb37e1a0000db" class="code__link" target="_blank">Pair of gloves</a>
+                </p>
+                <pre>
+                    <code class="code__code">
+                        function numberOfPairs(gloves) {
+                            const colorsCount = {};
+                            for (let i = 0; i < gloves.length; i++) {
+                              if (!colorsCount[gloves[i]]) colorsCount[gloves[i]] = 1;
+                               else colorsCount[gloves[i]] = colorsCount[gloves[i]] + 1;
+                            }
+                            let counter = 0;
+                            for (let key in colorsCount) {
+                              if (Math.floor(colorsCount[key] / 2) >= 1) {
+                                counter += Math.floor(colorsCount[key] / 2)
+                              }
+                            }
+                            return counter;
+                          }
+                    </code>        
+                </pre>
             </section>
             <section class="contacts content" id="contacts">
                 <h2 class="education__header">contacts</h2>
                 <ul class="contacts__list">
-                    <li class="contacts__item"><img class="contacts__icon" src="images,icons/phoneIcon.png" alt="phone.jpg"><a class="contacts__link" href="tel: +375445629649">+375 44 562 96 49</a></li>
-                    <li class="contacts__item"><img class="contacts__icon" src="images,icons/emailIcon.png" alt="email.jpg"><a class="contacts__link"href="mailto:tatarchuk.vladimir16@gmail.com">tatarchuk.vladimir16@gmail.com</a></li>
-                    <li class="contacts__item"><img class="contacts__icon" src="images,icons/tgIcon.png" alt="email.jpg"><a class="contacts__link" href="https://t.me/vladimirtatarchuk" target="_blank">@vladimirtatarchuk</a></li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="tel: +375445629649">
+                            <img class="contacts__icon" src="images,icons/phoneIcon.png" alt="phone.jpg">
+                            +375 44 562 96 49
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:tatarchuk.vladimir16@gmail.com">
+                            <img class="contacts__icon" src="images,icons/emailIcon.png" alt="email.jpg">
+                            tatarchuk.vladimir16@gmail.com
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="https://t.me/vladimirtatarchuk" target="_blank">
+                            <img class="contacts__icon" src="images,icons/tgIcon.png" alt="email.jpg">
+                            @vladimirtatarchuk
+                        </a>
+                    </li>
                 </ul>
             </section>
         </div>
     </main>
     <footer class="footer">
         <div class="wrapper">
-            <section class="rssLogo"></section>
+            <section class="rssLogo">
+                <a href="https://rs.school/js/" class="rssLink" target="_blank">
+                    <img src="/images,icons/rssLogo.svg" alt="rssLogo" class="rssLogoIcon">
+                </a>
+                <p class="footer__date">2022</p>
+                <div class="footer__content">
+                    <div class="footer__content__container">
+                        <a href="https://github.com/TatarchukVladimir" class="footer__link" target="_blank">
+                            <img src="/images,icons/githubIcon.png" alt="Github" class="footer__icon">
+                            GitHub
+                        </a>
+                    </div>
+                    <div class="footer__content__container">
+                        <a class="footer__link" href="https://www.codewars.com/users/rsschool_a95cf17ae817fc50" target="_blank">
+                            <img src="/images,icons/codewarsLogo.svg" alt="Codewars" class="footer__icon">
+                            Codewars
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
     </footer>
 </body>
