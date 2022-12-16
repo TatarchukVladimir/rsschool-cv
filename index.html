@@ -6,33 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>Tatarchuk Vladimir</title>
+    <title>Tatarchuk Vladimir CV</title>
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
             <div class="header__container">
-                <img class="header__photo" src="photo.png" alt="my photo">
+                <img class="header__photo" src="images,icons/photo.png" alt="my photo">
                 <div class="header__content">
                     <nav class="header__nav">
                         <ul class="header__list">
                             <li class="header__nav__item">
-                                
+                                <a href="#aboutMe" class="header__link">About Me</a>
                             </li>
                             <li class="header__nav__item">
-                                <a href="" class="header__link">Education</a>
+                                <a href="#education" class="header__link">Education</a>
                             </li>
                             <li class="header__nav__item">
-                                <a href="" class="header__link">Skills</a>
+                                <a href="#skills" class="header__link">Skills</a>
                             </li>
                             <li class="header__nav__item">
-                                <a href="" class="header__link">Code Example</a>
+                                <a href="#code" class="header__link">Code Example</a>
                             </li>
                             <li class="header__nav__item">
-                                <a href="" class="header__link">Contacts</a>
-                            </li>
-                            <li class="header__nav__item">
-                                <a href="" class="header__link">Languages</a>
+                                <a href="#contacts" class="header__link">Contacts</a>
                             </li>
                         </ul>
                     </nav>
@@ -45,10 +42,124 @@
         </div>
     </header>
     <main class="main">
-
+        <div class="wrapper main__wrapper">
+            <section class="education content" id="education">
+                <h2 class="education__header">education</h2>
+                <ul class="education__list">Belarusian National Technical University
+                    <li class="education__list__name">Faculty of Civil Engineering, Industrial and Civil construction</li>
+                </ul>
+                <ul class="education__list">Code basic
+                    <li class="education__list__name">
+                        <a href="https://ru.code-basics.com/languages/html" class="education__link" target="_blank">
+                            <img class="education__icon" src="images,icons/htmlIcon.png" alt="html.img">
+                            HTML
+                        </a>
+                    </li>
+                    <li class="education__list__name">
+                        <a href="https://ru.code-basics.com/languages/css" class="education__link" target="_blank">
+                            <img class="education__icon" src="images,icons/cssIcon.png" alt="css.img">
+                            CSS
+                        </a>
+                    </li>
+                    <li class="education__list__name">
+                        <a href="https://ru.code-basics.com/languages/javascript" class="education__link" target="_blank">
+                            <img class="education__icon" src="images,icons/jsIcon.png" alt="js.img">
+                            JavaScript
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="about content" id="aboutMe">
+                <h2 class="education__header">about me</h2>
+                <p class="about__content">Hello, I am 30 years old. I am very goal oriented. I have a great desire to learn new things and work.</p>
+                <ul class="about__list">Languages
+                    <li class="about__item">Russian - native languages</li>
+                    <li class="about__item">English  - A1-A2</li>
+                </ul>
+            </section>
+            <section class="skills content" id="skills">
+                <h2 class="education__header">skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/htmlIcon.png" alt="html.img"><span class="skills__name">HTML</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/cssIcon.png" alt="css.img"><span class="skills__name">CSS</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/sassIcon.png" alt="sass.img"><span class="skills__name">SASS</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/figmaIcon.png" alt="figma.img"><span class="skills__name">Figma</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/githubIcon.png" alt="github.img"><span class="skills__name">Github</span></li>
+                    <li class="skills__item"><img class="skills__icon" src="images,icons/jsIcon.png" alt="js.img"><span class="skills__name">JavaScript</span></li>
+                </ul>
+            </section>
+            <section class="code content" id="code">
+                <h2 class="education__header">code example</h2>
+                <p class="code__description">Codewars task:
+                    <a href="https://www.codewars.com/kata/58235a167a8cb37e1a0000db" class="code__link" target="_blank">Pair of gloves</a>
+                </p>
+                <pre>
+                    <code class="code__code">
+                        function numberOfPairs(gloves) {
+                            const colorsCount = {};
+                            for (let i = 0; i < gloves.length; i++) {
+                              if (!colorsCount[gloves[i]]) colorsCount[gloves[i]] = 1;
+                               else colorsCount[gloves[i]] = colorsCount[gloves[i]] + 1;
+                            }
+                            let counter = 0;
+                            for (let key in colorsCount) {
+                              if (Math.floor(colorsCount[key] / 2) >= 1) {
+                                counter += Math.floor(colorsCount[key] / 2)
+                              }
+                            }
+                            return counter;
+                          }
+                    </code>        
+                </pre>
+            </section>
+            <section class="contacts content" id="contacts">
+                <h2 class="education__header">contacts</h2>
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="tel: +375445629649">
+                            <img class="contacts__icon" src="images,icons/phoneIcon.png" alt="phone.jpg">
+                            +375 44 562 96 49
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:tatarchuk.vladimir16@gmail.com">
+                            <img class="contacts__icon" src="images,icons/emailIcon.png" alt="email.jpg">
+                            tatarchuk.vladimir16@gmail.com
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="https://t.me/vladimirtatarchuk" target="_blank">
+                            <img class="contacts__icon" src="images,icons/tgIcon.png" alt="email.jpg">
+                            @vladimirtatarchuk
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
     <footer class="footer">
-        
+        <div class="wrapper">
+            <section class="rssLogo">
+                <a href="https://rs.school/js/" class="rssLink" target="_blank">
+                    <img src="/images,icons/rssLogo.svg" alt="rssLogo" class="rssLogoIcon">
+                </a>
+                <p class="footer__date">2022</p>
+                <div class="footer__content">
+                    <div class="footer__content__container">
+                        <a href="https://github.com/TatarchukVladimir" class="footer__link" target="_blank">
+                            <img src="/images,icons/githubIcon.png" alt="Github" class="footer__icon">
+                            GitHub
+                        </a>
+                    </div>
+                    <div class="footer__content__container">
+                        <a class="footer__link" href="https://www.codewars.com/users/rsschool_a95cf17ae817fc50" target="_blank">
+                            <img src="/images,icons/codewarsLogo.svg" alt="Codewars" class="footer__icon">
+                            Codewars
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </footer>
 </body>
 </html>
