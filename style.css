@@ -102,11 +102,19 @@ html {
     border-bottom: 2px solid #e9e514;
 }
 
+.education__content {
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 0;
+}
+
 .education__list {
     color: #ffffff;
     font-size: 2.5em;
     font-weight: 500;
     list-style-type: none;
+    margin-top: 0;
 }
 
 .education__list__name {
@@ -133,10 +141,17 @@ html {
     font-size: 2em;
 }
 
-.about__list {
+.about__lang {
     color: #e9e514;
     font-size: 2em;
     font-weight: 500;
+    margin: 0; 
+}
+
+.about__list {
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 0;
 }
 
 .about__item {
@@ -210,7 +225,7 @@ pre {
     font-size: 1.5em;
 }
 
-.rssLogo {
+.footer__container {
     background-color: #e9e514;
     height: 80px;
     display: flex;

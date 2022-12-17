@@ -45,10 +45,12 @@
         <div class="wrapper main__wrapper">
             <section class="education content" id="education">
                 <h2 class="education__header">education</h2>
-                <ul class="education__list">Belarusian National Technical University
+                <p class="education__content">Belarusian National Technical University</p>
+                <ul class="education__list">
                     <li class="education__list__name">Faculty of Civil Engineering, Industrial and Civil construction</li>
                 </ul>
-                <ul class="education__list">Code basic
+                <p class="education__content">Code basic</p>
+                <ul class="education__list">
                     <li class="education__list__name">
                         <a href="https://ru.code-basics.com/languages/html" class="education__link" target="_blank">
                             <img class="education__icon" src="images,icons/htmlIcon.png" alt="html.img">
@@ -72,7 +74,8 @@
             <section class="about content" id="aboutMe">
                 <h2 class="education__header">about me</h2>
                 <p class="about__content">Hello, I am 30 years old. I am very goal oriented. I have a great desire to learn new things and work.</p>
-                <ul class="about__list">Languages
+                <p class="about__lang">Languages</p>
+                <ul class="about__list">
                     <li class="about__item">Russian - native languages</li>
                     <li class="about__item">English  - A1-A2</li>
                 </ul>
@@ -97,7 +100,7 @@
                     <code class="code__code">
                         function numberOfPairs(gloves) {
                             const colorsCount = {};
-                            for (let i = 0; i < gloves.length; i++) {
+                            for (let i = 0; i &lt; gloves.length; i++) {
                               if (!colorsCount[gloves[i]]) colorsCount[gloves[i]] = 1;
                                else colorsCount[gloves[i]] = colorsCount[gloves[i]] + 1;
                             }
@@ -116,7 +119,7 @@
                 <h2 class="education__header">contacts</h2>
                 <ul class="contacts__list">
                     <li class="contacts__item">
-                        <a class="contacts__link" href="tel: +375445629649">
+                        <a class="contacts__link" href="tel:+375445629649">
                             <img class="contacts__icon" src="images,icons/phoneIcon.png" alt="phone.jpg">
                             +375 44 562 96 49
                         </a>
@@ -139,7 +142,7 @@
     </main>
     <footer class="footer">
         <div class="wrapper">
-            <section class="rssLogo">
+            <div class="footer__container">
                 <a href="https://rs.school/js/" class="rssLink" target="_blank">
                     <img src="images,icons/rssLogo.svg" alt="rssLogo" class="rssLogoIcon">
                 </a>
@@ -158,7 +161,7 @@
                         </a>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     </footer>
 </body>
